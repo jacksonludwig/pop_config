@@ -25,11 +25,11 @@
 ;;       doom-variable-pitch-font (font-spec :family "sans" :size 13))
 
 (setq doom-font (font-spec :family "Menlo for Powerline" :size 15)
-      doom-big-font (font-spec :family "Menlo for Powerline" :size 20))
+      doom-big-font (font-spec :family "Menlo for Powerline" :size 21))
 ;; (setq doom-font (font-spec :family "Hack" :size 14)
       ;; doom-big-font (font-spec :family "Hack" :size 20))
 
-(setq +zen-text-scale 1)
+;; (setq +zen-text-scale 1)
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
@@ -61,3 +61,13 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+(defun toggle-theme()
+  (interactive)
+  (load-theme
+   (pcase doom-theme
+     ('doom-one
+      'doom-one-light)
+     ('doom-one-light
+      'doom-one))))
+(map! "<f5>" #'toggle-theme)
