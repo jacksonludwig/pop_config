@@ -25,10 +25,9 @@
 ;; (setq doom-font (font-spec :family "monospace" :size 12 :weight 'semi-light)
 ;;       doom-variable-pitch-font (font-spec :family "sans" :size 13))
 
+;; DEFAULT FONT IS UBUNTU MONO
 ;; (setq doom-font (font-spec :family "Meslo LG M" :size 15)
       ;; doom-big-font (font-spec :family "Meslo LG M" :size 21))
-
-;; (setq +zen-text-scale 1)
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
