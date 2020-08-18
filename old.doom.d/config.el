@@ -25,8 +25,10 @@
 ;; (setq doom-font (font-spec :family "monospace" :size 12 :weight 'semi-light)
 ;;       doom-variable-pitch-font (font-spec :family "sans" :size 13))
 
-;; (setq doom-font (font-spec :family "Meslo LG M" :size 15)
-      ;; doom-big-font (font-spec :family "Meslo LG M" :size 21))
+;; (setq doom-font (font-spec :family "Menlo for Powerline" :size 15)
+      ;; doom-big-font (font-spec :family "Menlo for Powerline" :size 21))
+(setq doom-font (font-spec :family "Meslo LG M" :size 15)
+      doom-big-font (font-spec :family "Meslo LG M" :size 21))
 
 ;; (setq +zen-text-scale 1)
 
